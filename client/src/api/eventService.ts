@@ -1,3 +1,4 @@
+import type { Event } from "../types/event";
 const API_URL = '/api/events';
 
 export const getEvents = async (): Promise<Event[]> => {
