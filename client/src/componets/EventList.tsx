@@ -1,3 +1,4 @@
+import { archiveEvent, deleteEvent } from '../api/eventService';
 import type { Event } from '../types/event';
 
 interface EventListProps {
