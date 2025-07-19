@@ -8,7 +8,34 @@ interface Event {
     archived: boolean;
 }
 
-let events: Event[] = [];
+let events: Event[] = [
+  {
+    id: '1',
+    title: 'Team Meeting',
+    date: '2023-10-15',
+    time: '14:00',
+    notes: 'Discuss project timeline',
+    category: 'Work',
+    archived: false
+  },
+  {
+    id: '2',
+    title: 'Family Dinner',
+    date: '2023-10-16',
+    time: '19:30',
+    notes: 'Birthday celebration',
+    category: 'Personal',
+    archived: false
+  },
+  {
+    id: '3',
+    title: 'Gym Session',
+    date: '2023-10-17',
+    time: '07:00',
+    category: 'Other',
+    archived: true
+  }
+];
 
 export const createEvent = ( eventData: Omit<Event , 'id' | 'category' | 'archived'>): Event => {
     const newEvent: Event = {
