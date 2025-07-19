@@ -1,5 +1,5 @@
-import { Event } from '../types/event';
 import { archiveEvent, deleteEvent } from '../api/eventService';
+import type { Event } from '../types/event';
 
 interface EventListProps {
   events: Event[];

@@ -1,5 +1,5 @@
 import type { Event } from "../types/event";
-const API_URL = '/api/events';
+const API_URL = 'http://localhost:5000/api/events';
 
 export const getEvents = async (): Promise<Event[]> => {
   const response = await fetch(API_URL);
