@@ -6,8 +6,8 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
-app.get('/health' , ( req , res ) => {
-  res.status(200).send({ status : 'ok'});
+app.get('/' , ( req , res ) => {
+  res.status(200).send('Mini event scheduler server is running');
 })
 
 app.use( (req , res) => {
