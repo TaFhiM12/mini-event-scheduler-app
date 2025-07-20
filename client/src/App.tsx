@@ -101,7 +101,6 @@ export default function App() {
                       <EventList 
                         events={archivedEvents} 
                         onEventUpdated={fetchEvents} 
-                        showArchived={true}
                       />
                     </div>
                   </section>
