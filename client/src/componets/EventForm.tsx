@@ -47,7 +47,7 @@ export default function EventForm({ onEventCreated }: EventFormProps) {
               type="text"
               value={title}
               onChange={(e) => setTitle(e.target.value)}
-              className="block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500 sm:text-sm"
+              className="block w-full p-2 rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500 sm:text-sm"
               required
             />
           </div>
@@ -58,7 +58,7 @@ export default function EventForm({ onEventCreated }: EventFormProps) {
                 type="date"
                 value={date}
                 onChange={(e) => setDate(e.target.value)}
-                className="block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500 sm:text-sm"
+                className="block w-full  py-2 px-2 rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500 sm:text-sm"
                 required
               />
             </div>
@@ -68,7 +68,7 @@ export default function EventForm({ onEventCreated }: EventFormProps) {
                 type="time"
                 value={time}
                 onChange={(e) => setTime(e.target.value)}
-                className="block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500 sm:text-sm"
+                className="block w-full rounded-md p-2 border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500 sm:text-sm"
                 required
               />
             </div>
@@ -78,7 +78,7 @@ export default function EventForm({ onEventCreated }: EventFormProps) {
             <textarea
               value={notes}
               onChange={(e) => setNotes(e.target.value)}
-              className="block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500 sm:text-sm"
+              className="block w-full p-2 rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500 sm:text-sm"
               rows={3}
               placeholder="Add any additional details..."
             />
