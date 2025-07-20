@@ -4,10 +4,10 @@ import type { Event } from '../types/event';
 interface EventListProps {
   events: Event[];
   onEventUpdated: () => void;
-  showArchived?: boolean;
+  
 }
 
-export default function EventList({ events, onEventUpdated, showArchived = false }: EventListProps) {
+export default function EventList({ events, onEventUpdated}: EventListProps) {
   const handleArchive = async (id: string) => {
     try {
       await archiveEvent(id);
