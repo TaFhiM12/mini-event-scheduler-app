@@ -1,5 +1,5 @@
 import type { Event } from "../types/event";
-const API_URL = 'https://backend-knci.onrender.com/api/events';
+const API_URL = `${import.meta.env.VITE_API_URL}`;
 
 export const getEvents = async (): Promise<Event[]> => {
   const response = await fetch(API_URL);
